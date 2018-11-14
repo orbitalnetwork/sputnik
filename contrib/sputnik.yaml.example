@@ -1,0 +1,17 @@
+# Sputnik file
+
+item: value
+item2: value
+
+
+## Logging.
+# Default output for the log messages is stdout.
+# Gonna be created at same place as the 'sputnik' is located
+# log: logfile.log
+
+# Set the full path for the custom location
+# log: /path/to/logfile.log
+
+## Cache file
+# set the name and path to store cache database
+cache: /path/to/cache.db

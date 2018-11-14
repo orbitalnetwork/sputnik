@@ -1,0 +1,12 @@
+[Unit]
+Description=The Unit of the Orbital Network
+After=syslog.target network.target
+Conflicts=
+
+[Service]
+Type=simple
+PIDFile=/var/spool/sputnik/sputnik.pid
+ExecStart=/usr/bin/sputnik
+
+[Install]
+WantedBy=multi-user.target
