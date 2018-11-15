@@ -14,7 +14,7 @@ install:
 
 sputnik:
 	mkdir -p $(PWD)/build
-	@GOPATH=$(GOPATH) go build -tags "$(GO_TAGS)" -ldflags " -X main.Version=${VERSION_DEV} -X main.Build=${BUILD} " -gcflags "all=-trimpath=$(PWD)" -asmflags "all=-trimpath=$(PWD)" -o build/$@ cmd/sputnik.go
+	@GOPATH=$(GOPATH) go build -tags "$(GO_TAGS)" -ldflags "-w -s -X main.Version=${VERSION_DEV} -X main.Build=${BUILD} " -gcflags "all=-trimpath=$(PWD)" -asmflags "all=-trimpath=$(PWD)" -o build/$@ cmd/sputnik.go
 
 clean:
 	@GOPATH=$(GOPATH) go clean
