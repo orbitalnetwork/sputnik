@@ -127,5 +127,6 @@ func coreInit() {
 		log.Info("Control interface is disabled")
 	}
 
+	core.Bootstrap()
 	return
 }

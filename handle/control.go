@@ -20,7 +20,7 @@ func (c *Control) Init() {
 
 	err := w.Publish("write_test", []byte("test"))
 	if err != nil {
-		log.Panic("Could not connect")
+		log.Error("Could not connect")
 	}
 
 }
