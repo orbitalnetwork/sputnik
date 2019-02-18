@@ -7,6 +7,7 @@ Orbital Network is running by the distributed nodes (Sputnik) with the [SON](htt
 ### Distributed Network Architecture
 
 Explanation of SON implementation and interactions with the Core Platform. [Read more...](docs/network.md)
+
 Here is demo how self organiznig network works
 
 ![](docs/demo.gif)
